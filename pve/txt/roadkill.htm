@@ -1,0 +1,310 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>How Human is Meaning?</title>
+<!-- nov 1995 -->
+</head>
+
+<body background="mudejar.gif">
+
+<p><a name="top"></a> </p>
+
+<h1 align="center"><a name="top">How Human is Meaning?</a> </h1>
+
+<p align="center"><a href="../index.html">Peter van Eijk</a> <a
+href="http://www.cs.rug.nl">Department of Computing Science</a>
+Rijks Universiteit Groningen Summer 1982 <a
+href="roadkill.htm#notes">English translation: Oct 1995</a> </p>
+
+<p align="center">Contents:<br>
+<a href="roadkill.htm#h1">Introduction</a> - <a
+href="roadkill.htm#h2">Dennett's Tools </a>- <a
+href="roadkill.htm#h3">My Tools</a> - <a href="roadkill.htm#h4">How
+does man see the world</a> <br>
+<a href="roadkill.htm#h5">A Hofstadter-ian strange loop</a> - <a
+href="roadkill.htm#h6">Conclusion</a> - <a
+href="roadkill.htm#refs">References</a>. </p>
+
+<blockquote>
+    <p><i>&quot;If you meet the Buddha<br>
+    on the road,<br>
+    kill him!&quot;</i> </p>
+</blockquote>
+
+<p><a href="roadkill.htm#top" name="h1"></a> </p>
+
+<h2 align="center"><a href="roadkill.htm#top" name="h1">Introduction</a>
+</h2>
+
+<p>Information processing has become the magic word for a number
+of sciences that in one way or another have the human as their
+subject of enquiry (in this paper I will abbreviate the stem of
+information processing and similar words to ip, in this case
+iping). With this, the concept of iping has acquired the status
+of scientific paradigm. It becomes interesting therefore to
+investigate the tools that are in use to understand iping. In
+this essay I will attempt to contrast Dennett's tools <a
+href="roadkill.htm#dennett78">[Dennett 78]</a>, which have a
+psychological and philosophical background, with my ideas, which
+have their background in the core computer science curriculum.
+One can also say that I try to rephrase a part of Dennett's ideas
+into my own words. <a href="roadkill.htm#top" name="h2"></a> </p>
+
+<h2 align="center"><a href="roadkill.htm#top" name="h2">Dennett's
+tools</a> </h2>
+
+<p>Dennett introduces the concept of intentional system. With
+that he hopes to have a good starting point for philosophical
+excursions. The behaviour of intentional systems can be described
+in terms of a set of &quot;beliefs&quot; and &quot;desires&quot;.
+This set, the so-called beliefsystem, then forms a description of
+the system at the intentional level (stance). Dennett emphasizes
+that this description is relative to the describer and his goals.
+In addition to the intentional level Dennett distinguishes the
+design level and the physical level. A description at the design
+level is in terms of the functions of the components of the
+system, while a description at the physical level only uses the
+physical properties of (the realisations of) these components. It
+will be clear that at these latter two levels the descriptions
+will become much more complex. </p>
+
+<p>Dennett claims that an attribution of intentionality
+corresponds to an attribution of rationality. Because of this,
+the concept of intentionality can be used to show where a theory
+of rational human thinking is using homunculi (little humans in
+the human), namely there where the theory uses intentional terms
+for description. </p>
+
+<p>Belief systems can be seen as a kind of world models, they
+contain information about the environment: facts, dependencies,
+etc. We can therefore consider the intentional level as a kind of
+meaning level. Through the use of belief systems the system
+assigns a certain meaning to specific events, for example whether
+these events should be avoided (are dangerous). <a
+href="roadkill.htm#top" name="h3"></a> </p>
+
+<h2 align="center"><a href="roadkill.htm#top" name="h3">My Tools</a>
+</h2>
+
+<p>Software is a collective name for descriptions of ipers, in
+particular those that can be realised by automata (or machines).
+Computer science studies, amongst others, the construction of
+software. </p>
+
+<p>Continually recurring concepts in computer science are
+&quot;representation&quot; and &quot;structuring&quot;. Input,
+output, and state of an iper all have their own internal
+representation. Important elements of a representation are
+codings (for example red=1), where meanings are mapped to
+numbers, and structurings (the way of decomposing such
+representations). A good structuring makes it possible to study a
+representation at several levels, and to abstract from codings.
+This explains the importance of the terms hierarchy and level: a
+hierarchy is a structuring that is divisible in levels. Besides
+these, we have the concept of interpretation. This encompasses
+the concept decoding. </p>
+
+<p>So: a coding maps meanings to numbers (or bits), a
+representation maps meanings to meanings, and an interpretation
+maps numbers to meanings. </p>
+
+<p>Most computer programs convert information in one
+representation into another representation. If these
+representations are not adequate, this process will usually
+involve a search process. If, for example, a quadratic equation
+is represented in polynomial form, its zeros can be computed,
+whereas with a representation in functional form they need to
+actually be searched for with some kind of approximation method.
+This conversion adds nothing to the amount of meaning: in a
+closed ipsystem, the total amount of information can only
+decrease. Stated differently, the input plus the computerprogram
+are a redundant description of the output. A classic example of
+information reduction is in so-called management information
+systems, where megabytes of data on the ups and downs of the
+enterprise are condensed into a few well-organized tables and
+graphs on which decisions are based. </p>
+
+<p>This leads us to the conformity principle. It is a fact of
+experience that the structure of an iper is related to (is in
+conformity with) its environment. The iper models in a certain
+sense reality, its environment. This modelling is naturally
+relative with respect to the goals because, in general, it will
+be imperfect. Illustrations and applications of this principle: </p>
+
+<ul>
+    <li>Design methodologically: if a structuring of the
+        environment is given or obvious, derive the structure of
+        the iper from that. A compiler for programming languages
+        will in its structure correspond to the grammar for that
+        language. </li>
+    <li>Explanatory: it is not surprising that an iper becomes
+        more difficult as the mismatch between the structure of
+        its input and the structure of its output becomes bigger.
+        In that respect the structuring of the iper can be seen
+        as a kind of least common denominator of the structures
+        of the input and the output. </li>
+    <li>The argument of the structured programming movement: or,
+        how can we, given our limited capacities (abilities),
+        most easily construct ipers <a
+        href="roadkill.htm#dijkstra72">[Dijkstra 72]</a>. The
+        cognitive human is characterized by a limitation in the
+        ability to do a lot at the same time. This handicap is
+        partly compensated by the use of a number of techniques
+        to control complexity. Dijkstra calls these enumeration,
+        mathematical induction and abstraction. According to the
+        conformity principle these have there counterpart in the
+        programming language constructs sequencing, alternation,
+        repetition, and subroutines. If we want to be able to
+        comprehend a computer program of some size, then it may
+        be build with only the aforementioned programming
+        language constructs. </li>
+</ul>
+
+<h2 align="center"><a href="roadkill.htm#top" name="h4">How does
+man see the world?</a> </h2>
+
+<p>As Dennett already states in chapters 1 and 12, a lot of
+computer programs of the more complex kind lend themselves to an
+approach on the intentional level. In my practice, the clearest
+examples of these are compilers and operating systems. In using
+these naturally a lot of errors are made when the knowledge of
+the user is insufficient. The typical scheme of an explanation
+that puts the ignorant back on the right track is then:
+&quot;Yes, but if you do this the computer then thinks that you
+mean that, and since it tries to accomplish such it reacts
+so.&quot; One therefore acts as if the computer assigns meaning
+to our conduct, like we assign meaning to the conduct of other
+people. Dijkstra calls this antropomorphizing and opposes it. I
+call it intentionalising and see it as an attempt to understand
+something with the tools that are natural to humans. </p>
+
+<p>This tendency to assign meanings to events is a human quality.
+Apart from the intentionalising as mentioned before it appears as
+a characteristic of religions. Some examples of these are seeing </p>
+
+<ul>
+    <li>a solar eclipse as a bad spirit that eats the sun, </li>
+    <li>a thunderstorm as a manifestation of Wodan driving his
+        cart across the heaven, </li>
+    <li>severe mischief happening to somebody as a punishment by
+        God. </li>
+</ul>
+
+<p>In this context, sociologists talk about a &quot;social and
+religious definition of reality&quot;. </p>
+
+<p>For me the ultimate religion is the Zen doctrine, especially
+because it questions this structuring of reality. The opening
+quote of this paper is explained in <a href="roadkill.htm#kopp72">[Kopp
+72]</a>, in which the search of psychotherapeutic patients for
+meaning is illustrated with examples from the world literature: </p>
+
+<blockquote>
+    <p>'The Zen master warns: &quot;If you meet the Buddha on the
+    road, kill him!&quot; This admonition points up that no
+    meaning that comes from outside of ourselves is real. The
+    Buddhahood of each of us has already been obtained. We need
+    only recognize it. Philosophy, religion, patriotism, all are
+    empty idols. The only meaning in our lives is what we each
+    bring to them. Killing the Buddha on the road means
+    destroying the hope that anything outside ourselves can be
+    our master.' (page 188) </p>
+</blockquote>
+
+<p>Stated differently: when it appears that something or somebody
+starts to bring meaning into your life, you should put an end to
+that really quick. </p>
+
+<p>The structuring of the world in terms of meaning has,
+according to the conformity principle, its counterpart in the
+structure of human thought. For this Newell and Simon have
+introduced the &quot;physical symbol system hypothesis&quot; <a
+href="roadkill.htm#newellsimon76">[Newell Simon 76]</a> <a
+href="roadkill.htm#simon81">[Simon 81]</a>, and what is a symbol
+besides being a carrier of meaning? This hypothesis states that
+symbol systems are necessary and sufficient for intelligence in
+general. According to Simon a computer is also a symbol system,
+but by now it should be clear that according to me this is more a
+property of humans than of computers. <a href="roadkill.htm#top"
+name="h5"></a> </p>
+
+<h2 align="center"><a href="roadkill.htm#top" name="h5">A
+Hofstadter-ian strange loop</a> </h2>
+
+<p>How arises this structuring of human thinking (by humans)? The
+conclusion thrusts itself upon us via the conformity principle:
+our vision on our structure is a result of that structure. Stated
+differently: the fact that we think that we think in terms of
+meaning is caused by the fact that we think in terms of meaning.
+Apparently this self-involvedness is fundamental in psychology.
+At least, that is what I have heard about <a
+href="roadkill.htm#linschoten64">[Linschoten 64]</a>. <a
+href="roadkill.htm#top" name="h6"></a> </p>
+
+<h2 align="center"><a href="roadkill.htm#top" name="h6">Conclusion</a>
+</h2>
+
+<p>The concept of meaning is the most fundamental human tool. As
+derivatives of that operate the concepts of information and
+information processing. That is because information is created by
+the favour of attaching meaning to certain patterns, physical or
+otherwise. One question then remains: how is it that we get these
+patterns? <a href="roadkill.htm#top" name="refs"></a> </p>
+
+<h2 align="center"><a href="roadkill.htm#top" name="refs">References</a>
+</h2>
+
+<dl>
+    <dt><a name="dennett78">[Dennett 78]</a> </dt>
+    <dd>Daniel C. Dennett, <em>Brainstorms, philosophical essays
+        on mind and psychology</em>, Harvester Press 1981
+        Brighton, Bradford Books 1978. </dd>
+    <dt><a name="dijkstra72">[Dijkstra 72]</a> </dt>
+    <dd>O. J. Dahl, E. W. Dijkstra, C. A. R. Hoare, <em>Structured
+        Programming</em>, Academic Press 1972 London. </dd>
+    <dt><a name="hofstadter79">[Hofstadter 79]</a> </dt>
+    <dd><a
+        href="http://www.psych.indiana.edu/cogsci/hofstadter.html">Douglas
+        R. Hofstadter</a>, <em>Gödel, Escher, Bach: An Eternal
+        Golden Braid.</em>, Vintage Books 1980 New York, Basic
+        Books 1979. </dd>
+    <dt><a name="kopp72">[Kopp 72]</a> </dt>
+    <dd>Sheldon B. Kopp, <em>If you meet the Buddha on the road,
+        kill him!</em>, Science and Behavior Books 1972 Palo
+        Alto. </dd>
+    <dt><a name="linschoten64">[Linschoten 64]</a> </dt>
+    <dd>J. Linschoten, <em>Idolen van de Psycholoog</em>,
+        Bijleveld, Utrecht, 1962. </dd>
+    <dt><a name="newellsimon76">[Newell Simon 76]</a> </dt>
+    <dd>Allen Newell, Herbert A. Simon, &quot;Computer Science as
+        Empirical Enquiry&quot;, <em>Communications of the ACM,</em>
+        19 (march 1976):113-126. </dd>
+    <dt><a name="simon81">[Simon 81]</a> </dt>
+    <dd><a
+        href="http://www.cudenver.edu/~mryder/itc_data/cogsci.html#simon">Herbert
+        A. Simon</a>, <em>The Sciences of the Artificial,</em>
+        second edition, MIT press 1981 Cambridge Massachusetts. </dd>
+</dl>
+
+<hr>
+
+<p><a href="roadkill.htm#top" name="notes"></a></p>
+
+<h2><a href="roadkill.htm#top" name="notes">Notes</a> </h2>
+
+<p>This is a translation from the original 1982 paper, which was
+written in Dutch as a student paper for a course given by prof
+Michon. Translation and hypertext links by the author. © 1995
+Peter van Eijk. </p>
+
+<p>This translation tries to mimic the original Dutch as closely
+as possible. As I understand that this is rather terse, and not
+particularly accessible, I am in the process of producing a more
+up to date version. All comments are welcome, also by <a
+href="mailto:pve@mindless-dot-com">e-mail</a>. <br>
+<a href="../index.html">Home page Peter van Eijk</a>. </p>
+</body>
+</html>

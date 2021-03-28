@@ -1,0 +1,381 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Elektronisch zakendoen vereist goede architectuur</title>
+</head>
+
+<body>
+
+<p><font size="2" face="Arial">1999 week 4</font></p>
+
+<p><font size="6" face="Arial">Elektronisch zakendoen vereist
+goede architectuur</font></p>
+
+<p><font size="2" face="Arial">E-commerce is niet alleen het
+invullen van een bestelformulier. Het gaat om meer.
+Bedrijfsprocessen worden gekoppeld. Klanten wensen een
+geïntegreerde dienstverlening. Voor die samenwerking en
+interactie, zeggen Peter van Eijk en Wout Hofman, is een
+architectuur onontbeerlijk. Dit is de derde aflevering van een
+serie over elektronisch zakendoen. De vorige artikelen verschenen
+15 en 22 januari.</font></p>
+
+<p><font size="2" face="Arial">Electronic commerce (EC) is
+zakendoen met elektronische middelen. Dat is meer dan alleen
+communicatie tussen organisaties en individuele consumenten, het
+is ook de communicatie tussen organisaties onderling.
+Elektronisch zakendoen is niet alleen het bouwen van een
+webwinkel of betalen via Internet (Internet-commerce of
+web-commerce), het is meer dan EDI (electronic data interchange).</font></p>
+
+<p><font size="2" face="Arial">Peter van Eijk en Wout Hofman</font></p>
+
+<p><font size="2" face="Arial">E-commerce koppelt met
+elektronische communicatie bedrijfsprocessen van organisaties,
+zoals marketing, verkoop, productie, distributie, inkoop en
+administratie. Het is een vorm van dienstverlening waarbij de
+verschillende transactiefases voor de afhandeling van
+bedrijfsprocessen op een geïntegreerd elektronisch niveau worden
+gebracht (catalogus, bestelling, rapportage, facturering,
+logistiek en betaling).</font></p>
+
+<p><font size="2" face="Arial">Dit is een veel bredere definitie
+dan vaak wordt gehanteerd. Doorgaans beperkt men zich tot een
+koper die een bestelformulier invult op een webpagina. Deze
+uitbreiding vergt verschillende technieken met het risico dat men
+het zicht op hoofd- en bijzaken verliest. Om dit te voorkomen is
+onder meer een architectuur nodig, die het ontwikkelen, invoeren
+en onderhouden van E-commerce veel overzichtelijker maakt. Een
+architectuur ondersteunt een beheersbare aanpassing van
+bedrijfsprocessen aan de markt. In de praktijk wordt zij echter
+nog weinig toegepast bij EC-implementaties.</font></p>
+
+<p><font size="2" face="Arial"><b>Doorlooptijd</b></font></p>
+
+<p><font size="2" face="Arial">E-commerce speelt in toenemende
+mate een rol bij organisatieontwikkeling en -verandering.
+Organisaties optimaliseren hun bedrijfsprocessen, enerzijds om
+bijvoorbeeld voorraden te reduceren, anderzijds om
+concurrentievoordeel te behalen. Zij kijken verder dan de directe
+leverancier of afnemer. Een hele keten wordt bekeken. Die keten
+omvat ook de leverancier van de leverancier en de afnemer van de
+afnemer.</font></p>
+
+<p><font size="2" face="Arial">Zo kan een fabrikant de
+verantwoordelijkheid krijgen om een winkelvoorraad op peil te
+houden op basis van actuele verkoopcijfers, zonder dat in de
+tussenliggende schakels van distributie nog voorraadbeslissingen
+worden genomen of bestellingen gedaan. Deze technieken worden
+onder meer aangeduid als 'vendor managed inventory' en 'supply
+chain management' (SCM). Zij vergen voortdurende communicatie
+tussen alle organisaties in een keten.</font></p>
+
+<p><font size="2" face="Arial">Ondernemingen willen ook de
+doorlooptijd van klantvragen drastisch terugbrengen. Een
+klantvraag leidt via een keten van processen tot een
+productieorder. Heen en terug moet deze keten veel sneller worden
+doorlopen. Dit wordt 'efficient customer response' (ECR) genoemd.
+Klanten willen hun bestellingen of vragen online doen en de
+voortgang van een order zien om eigen voorraden, productie en
+distributie te optimaliseren. Zij hebben individuele wensen,
+hetgeen sterke koppelingen met productieplanning vraagt. De
+efficiënte afhandeling van schadeclaims is ook een voorbeeld van
+ECR. Dit kan een langdurig en complex proces zijn met
+tussenpersonen, experts, maatschappijen en juridische
+adviesbureaus.</font></p>
+
+<p><font size="2" face="Arial">Internet maakt het tegenwoordig
+mogelijk klanten overal ter wereld te bedienen en toeleveranciers
+aan te sturen. In zijn meest extreme vorm leidt dit tot virtuele
+ondernemingen als Virtual Vineyards, Amazon Books en CD-now. Deze
+richten zich alleen op de organisatie van verkoop en distributie
+en niet op productie en voorraadvorming. Essentieel voor hen is
+een transparante aansturing van de onderaannemers via
+elektronische communicatie.</font></p>
+
+<p><font size="2" face="Arial">E-commerce wordt ook in toenemende
+mate ingezet voor dienstverlening, zoals de afhandeling van
+zorgprocessen, (sociale) verzekeringen, een elektronisch
+overheidsloket (OL2000, het Centrum voor Werk en Inkomen), de
+belastingdiskette met service via een website. In vrijwel alle
+toepassingen is het streven te komen tot geïntegreerde
+dienstverlening.</font></p>
+
+<p><font size="2" face="Arial">E-commerce kan ook een middel zijn
+om bijvoorbeeld nieuwe wetgeving uit te voeren die een scheiding
+afdwingt tussen de aanbieders en gebruikers van een
+infrastructuur. Voorbeelden hiervan zijn te vinden in de
+telecommunicatie, energievoorziening en railinfrastructuur. Zo
+zijn er meerdere telefoonmaatschappijen waarmee gebeld kan worden
+over dezelfde aansluiting, en er kunnen meerdere maatschappijen
+treindiensten rijden op hetzelfde spoor. Dit vergt een duidelijke
+organisatorische en technische scheiding van de aanbieders en
+gebruikers van de desbetreffende infrastructuur.</font></p>
+
+<p><font size="2" face="Arial"><b>Slachtvee</b></font></p>
+
+<p><font size="2" face="Arial">Klanten wensen dus direct (en
+indirect) invloed op de gehele toeleveringsketen. Zij moeten ook
+via één aanspreekpunt een geïntegreerd pakket van diensten
+kunnen afnemen. En in beide gevallen willen zij zo snel mogelijk
+geïnformeerd worden over statusveranderingen bij toelevering.
+Denk aan de recente ziektes van slachtvee (BSE) in relatie tot de
+verkoop van vlees. Goede informatievoorziening over de oorsprong
+van vlees is een noodzaak om het te kunnen verkopen aan
+consumenten. Andere voorbeelden van dergelijke volgsystemen zijn
+'tracking en tracing' in de logistiek en het 'client volg
+communicatiesysteem' (CVCS) voor sociale verzekeringen. </font></p>
+
+<p><font size="2" face="Arial">E-commerce verbetert niet alleen
+de concurrentiepositie, het kan van levensbelang zijn voor een
+organisatie.</font></p>
+
+<p><font size="2" face="Arial">De relatie tussen organisatie- en
+technologieveranderingen is daarom van essentieel belang. Nieuwe
+organisatiestructuren (bijvoorbeeld één loket) worden alleen
+met nieuwe (EC-)technologie ondersteund. Web-commerce richt zich
+met name op front-office-processen als marketing, verkoop en
+service met Internet-technologie. De optimalisatie van
+back-office-processen als productie en distributie vindt veelal
+plaats met EDI. De integratie van marketing, verkoop, productie,
+distributie en service is belangrijk. De integratie van
+web-commerce en EDI is dus een noodzaak.</font></p>
+
+<p><font size="2" face="Arial">De Gartner Group constateert
+echter een diepe kloof tussen enerzijds personen belast met
+web-commerce en anderzijds logistieke en EDI-managers. Dit is
+zelfs het geval als deze personen in dezelfde organisatie werken.
+Het onderzoeksbureau voorspelt dat bedrijven die in staat zijn
+deze twee invalshoeken organisatorisch te integreren, hun
+concurrentievermogen zullen vertienvoudigen.</font></p>
+
+<p><font size="2" face="Arial"><b>Integratie</b></font></p>
+
+<p><font size="2" face="Arial">Geïntegreerde dienstverlening is
+gebaseerd op ketens van bijvoorbeeld een koper, verkoper,
+vervoerder, bank en fysieke distributeur. Alle processen in
+ketens moeten worden beschouwd, vanaf de eerste klantinteractie
+tot het wegdoen van een product door de klant. Geïntegreerde
+dienstverlening vereist een geïntegreerd model van alle klant-
+en toeleverancierinteracties: van catalogusraadpleging,
+bestelling, aflevering, facturering, betaling tot
+serviceverstrekking tijdens het gebruik.</font></p>
+
+<p><font size="2" face="Arial">Organisaties zijn echter autonoom
+en komen niet vanzelf tot een gemeenschappelijk model voor
+samenwerking en interactie. Zij opereren in netwerken van ketens.
+Commerciële afspraken tussen organisaties resulteren in een
+volgorde en samenhang van berichten. Condities voor annulering
+van bestellingen, tijdstip van facturatie en het aangaan van een
+zakelijke verplichting tot levering en betaling worden
+vastgelegd. Deze regels moeten ook op korte termijn veranderd
+kunnen worden, zodat het makkelijk is om een procesverandering
+door te vertalen naar een operationele verbetering. De
+bedrijfsprocessen moeten immers zijn afgestemd op veranderingen
+in de markt.</font></p>
+
+<p><font size="2" face="Arial">Om dit met enige kans op succes te
+doen is het nodig de kracht van twee aanpakken te integreren: de
+gegevensgerichte en de procesgerichte aanpak. Aan de gegevenskant
+is er de traditionele EDI-aanpak die zich richt op het
+ontwikkelen en invoeren van (losstaande) berichten. De toepassing
+van bijvoorbeeld Edifact (EDI voor administratie, handel en
+transport) en XML/EDI (extensible mark-up language) is gericht op
+het automatiseren van de huidige formulierstromen met
+elektronische berichten. Een conceptuele benadering, met
+bijvoorbeeld data- of objectmodellering, wordt daarbij niet
+gevolgd. Dit maakt de koppeling van web-commerce en EDI, en dus
+de integratie van front- en back-office, niet eenvoudiger.</font></p>
+
+<p><font size="2" face="Arial">De gegevensgerichte aanpak
+beschrijft niet de samenhang van de verschillende berichten. Een
+andere invalshoek is de procesgerichte aanpak zoals die bij
+werkstroomautomatisering en business process (re)engineering
+wordt gehanteerd. Het gaat dan primair om de vraag: wie doet wat
+en wanneer? Een werkstroom beschrijft bijvoorbeeld wie een rol
+speelt in de afhandeling van een schadeclaim en wie er besluit
+tot een nadere expertise in die afhandeling. In deze aanpak staat
+de volgorde centraal. Er wordt weinig aandacht besteed aan de
+inhoud en structuur van de berichten.</font></p>
+
+<p><font size="2" face="Arial"><b>Architectuur</b></font></p>
+
+<p><font size="2" face="Arial">Om te komen tot een geïntegreerde
+dienstverlening bestaat er dus behoefte aan een model voor de
+uitwisseling van berichten in een hele keten van partijen. Aan
+een dergelijk model kan de integratie van front- en back-office
+worden opgehangen en die van de gegevens- en proces-structuren.
+Zo'n model is een EC-architectuur. Voor zo'n architectuur zijn de
+volgende zaken van belang.</font></p>
+
+<p><font size="2" face="Arial">Er zijn meerdere onafhankelijke
+partijen die samenwerken, met elk hun eigen interne processen en
+hard- en software. Denk hierbij aan klanten, leveranciers,
+vervoerders, banken. Deze partijen wisselen berichten uit:
+opdrachten, bevestigingen, planningsgegevens, rapportages en
+vragen. Deze berichten bevatten allerlei elementen die ook in
+andere berichten voorkomen: ordernummer, NAW-gegevens,
+aflevertijd en -plaats en artikelen. Door deze berichten in een
+bepaalde volgorde uit te wisselen worden bedrijfsprocessen
+gekoppeld, bijvoorbeeld een bestelling die resulteert in een
+productieorder en een levering die leidt tot financiële
+afrekening. Een dergelijke volgorde heet een scenario.</font></p>
+
+<p><font size="2" face="Arial">Organisaties hebben in een keten
+vaak (impliciete) afspraken over acceptabele scenario's en
+berichtenstructuren. Een bedrijfsproces is veelal door
+verschillende scenario's gekoppeld. Een stelsel van afspraken
+over alle toegestane scenario's en berichtenstructuren voor de
+koppeling van bedrijfsprocessen wordt ook wel een protocol
+genoemd. Een protocol beschrijft alleen de interactie tussen twee
+organisaties en niet die voor een gehele keten. Organisaties zijn
+daardoor in staat om in meerdere ketens te acteren en sneller van
+relaties te wisselen. Een protocol is een (lego)bouwsteen om
+interacties in organisatienetwerken te beschrijven. Zo zijn er
+verschillende protocollen, bijvoorbeeld een voor bestellen en een
+voor distributie.</font></p>
+
+<p><font size="2" face="Arial">Elke organisatie bepaalt naast de
+interne koppeling van bedrijfsprocessen ook zelf de koppeling van
+protocollen met klanten en toeleveranciers. Er hoort geen
+misverstand te ontstaan over de berichten die een organisatie in
+een bepaalde situatie mag of moet versturen. Anders ontstaan er
+vertragingen in de uitvoering, die grote financiële gevolgen
+kunnen hebben.</font></p>
+
+<p><font size="2" face="Arial">Primair zijn deze afspraken
+onderdeel van een zakelijke overeenkomst. Daarna moeten ze worden
+uitgewerkt in operationele IT-systemen, zodat de
+berichtenuitwisseling tussen de organisaties zo automatisch
+mogelijk kan verlopen.</font></p>
+
+<p><font size="2" face="Arial"><b>Onmisbaar</b></font></p>
+
+<p><font size="2" face="Arial">Operationele IT-systemen hebben
+een belangrijke rol in de afhandeling van de verschillende
+transactiefases tussen organisaties. In de samenwerkende
+operationele systemen kunnen we een aantal lagen herkennen als in
+een soort Osi-model:</font></p>
+
+<p><font size="2" face="Arial">1. De 'business-transactielaag'
+bevat de afspraken over de volgordes van berichten en de
+aansturing van interne applicaties (business transaction
+protocol: orderverwerking, logistieke besturing). Elk van de
+betrokken systemen implementeert het protocol in de zogenaamde
+business transaction manager.</font></p>
+
+<p><font size="2" face="Arial">2. De 'EDI-presentatielaag' bevat
+de afspraken over structuur en betekenis van berichten en dus de
+vertaling tussen interne formaten (zogenaamde in-house files) en
+externe formaten zoals Edifact en XML (EDI presentation
+protocol).</font></p>
+
+<p><font size="2" face="Arial">3. De 'communicatielaag' is voor
+de daadwerkelijk fysieke uitwisseling van berichten. Hoewel de
+technische keuzes hier uitgebreid en omvattend kunnen zijn, zijn
+ze minder kritisch voor de integratie van bedrijfsprocessen.</font></p>
+
+<p><font size="2" face="Arial">In een EC-architectuur is het dus
+van belang om op alle lagen de afspraken goed te beschrijven,
+inclusief de koppeling met interne applicaties van organisaties.
+Dit laatste vergt onder meer een beschrijving van de relatie
+tussen een bericht en het datamodel van de applicatie die het
+bericht gaat verwerken.</font></p>
+
+<p><font size="2" face="Arial">Een EC-architectuur is onmisbaar
+bij de koppeling van bedrijfsprocessen van organisaties met
+elektronische communicatie. Als zo'n architectuur goed beschreven
+is, toegankelijk is voor alle betrokkenen en gebruikt kan worden
+voor het snel instellen van operationele systemen, is het
+aanpassen van bedrijfsprocessen aan de wensen in de markt beter
+te beheersen.</font></p>
+
+<p><font size="2" face="Arial">Een architectuur is ook onmisbaar
+voor het ontwikkelen van EC-software. Uniformiteit in deze
+software is noodzakelijk om snel en eenvoudig operationele
+systemen in te stellen voor nieuwe bedrijfsprocessen of nieuwe
+relaties.</font></p>
+
+<p><font size="2" face="Arial">De architectuur van
+E-commerce-systemen is op een aantal plaatsen in Nederland
+onderwerp van onderzoek. Het Telematica Instituut heeft in het
+Testbed-project een methodiek ontwikkeld voor de beschrijving van
+organisatie-overstijgende bedrijfsprocessen. Bij de TU Eindhoven
+richt men zich op procesmodellering voor werkstroomautomatisering
+en business process (re)engineering. Hierbij wordt het
+Petri-net-formalisme gebruikt, ondersteund door Exspect
+(Executable Specification Tool).</font></p>
+
+<p>&nbsp;</p>
+
+<p><font size="2" face="Arial">Dr P.H.J. van Eijk en dr ir W.J.
+Hofman zijn respectievelijk als senior adviseur en partner
+werkzaam bij Bakkenist Management Consultants te Diemen.</font></p>
+
+<p><font size="2" face="Arial">Begrippen</font></p>
+
+<p><font size="2" face="Arial">Om tot een architectuur van een
+EC-systeem te komen kan een model worden gebruikt. De volgende
+begrippen spelen daarbij een belangrijke rol:</font></p>
+
+<ul>
+    <li><font size="2" face="Arial">Bericht: een gestructureerde
+        verzameling gegevens, met een afzender en geadresseerde.
+        Berichten worden uitgewisseld door organisaties, personen
+        en maken onderdeel uit van scenario's. Voorbeelden:
+        bestelling, factuur. Berichten kunnen op vele manieren
+        worden uitgewisseld: op papier of floppy, als EDI-bericht
+        of als webformulier.organisatieonderdelen of </font></li>
+    <li><font size="2" face="Arial">Keten: een reeks onderling
+        afgestemde bedrijfsprocessen van twee of meer
+        organisaties om een bepaalde dienst of product te leveren
+        aan klanten. Ketens zijn onderling ontkoppeld via fysieke
+        of administratieve voorraden.</font></li>
+    <li><font size="2" face="Arial">Organisatienetwerk: een
+        verzameling ketens van samenwerkende organisaties.</font></li>
+    <li><font size="2" face="Arial">Scenario: een reeks berichten
+        die wordt uitgewisseld in een keten. Voorbeelden: een
+        bestelscenario of een schadeafhandelingsscenario.</font></li>
+    <li><font size="2" face="Arial">Protocol: een stelsel regels
+        dat berichtenstructuren en -volgorde beschrijft voor de
+        koppeling van bedrijfsprocessen van twee organisaties.
+        Een protocol vormt de bouwsteen om koppelingen tussen
+        bedrijfsprocessen in organisatienetwerken te beschrijven.</font></li>
+</ul>
+
+<p><font size="2" face="Arial">Scenario</font></p>
+
+<p><font size="2" face="Arial"><img src="scenario.gif"
+width="445" height="340"></font></p>
+
+<p><font size="2" face="Arial">Een scenario - getekend in een
+tijdvolgorde-diagram - van een bestelling met aflevering. Een
+klant stuurt een bericht met een bestelling aan zijn detaillist,
+die deze bestelling doorstuurt naar de fabrikant. Uit logistieke
+overwegingen wordt het product rechtstreeks van de fabriek naar
+de klant gestuurd. Om dit te kunnen doen moet de fabrikant aan
+een vervoerder instructies geven over de zending. In dit
+voorbeeld zal de vervoerder zelf de klant op de hoogte stellen
+van het moment waarop de zending verwacht kan worden. Als de
+zending bij de klant is aangekomen zal hij voor ontvangst moeten
+tekenen. Dit bewijs van ontvangst geeft de vervoerder door aan de
+detaillist die het gebruikt als bewijs om de factuur te kunnen
+sturen.</font></p>
+
+<p><font size="2" face="Arial">Uiteraard is dit slechts één
+scenario. Het toont bijvoorbeeld niet de berichtenuitwisseling
+bij afwijkingen en verstoringen. Het verloop van de tijd is
+aangegeven van boven naar beneden. De berichten die tussen de
+organisaties worden uitgewisseld zijn aangegeven met schuine
+pijlen.</font></p>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1416350-2";
+urchinTracker();
+</script>
+</body>
+</html>

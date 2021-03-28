@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="FORMATTER" content="Microsoft FrontPage 2.0">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Peter van Eijk - a bit about compression</title>
+</head>
+
+<body background="http://www.van-eyk.net/pve/mudejar.gif" bgcolor="#FFFFFF">
+
+<h1>Compression</h1>
+
+<p>1998</p>
+
+<p>[Back to <a href="sirframe.htm">Software in Reality</a> or <a
+href="http://www.van-eyk.net/pve/think/index.html">Home page</a>] </p>
+
+<p>One of the pioneers of fractal image compression is Barnsley,
+with his firm <a href="http://www.iterated.com/">Iterated systems</a>.
+You can have a look at one of my <a href="http://www.van-eyk.net/pve/think/peter2.fif">compressed</a>
+pictures (17Kbyte), and compare them with a similar <a
+href="http://www.van-eyk.net/pve/think/peter96.gif">gif</a> (12 Kbyte) or <a href="http://www.van-eyk.net/pve/think/peter96.wif">wif
+version</a> (4 Kbyte).(wif compression by <a
+href="http://www.cengines.com/">Cengines.com</a>).</p>
+
+<p>There is also another type of compression, based on wavelets.
+An example of that would be a <a href="dorien.wif.html">wif picture</a>
+(16 Kbytes), compared to a <a href="http://www.van-eyk.net/pve/think/dorien.jpg">jpg version</a>
+(52 Kbytes).</p>
+
+<p>An analysis of image compression algorithms reveals some
+underlying assumptions about the structure of the data, and in
+particular assumptions about the structure of the
+interpretational systems: the eye and the mind.</p>
+
+<p>The gif format compresses by replacing long sequences of
+identical pixels with a special code. This assumes that the
+picture has a lot of very evenly colored patches. This tends to
+be true for line art and other diagrams.</p>
+
+<p>The jpeg format compresses by taking a spacial fourier
+transform of the picture and representing the higher frequency
+image components with fewer bits. This works because the eye is
+not set up very well to detect absolute color differences, so
+that two adjacent pixels that have different colors are, well,
+different. On the other hand, the eye has built in
+edge-detectors, so that if you have a surface that gradually
+changes hue, will appear rippled if this smoothness is not
+represented in a precise way.</p>
+
+<p>Wavelet compression is basically an improvement on this.</p>
+
+<p>Fractal compression tries to exploit self similarities in the
+image data.</p>
+
+<hr>
+
+<p>[Back to <a href="sirframe.htm">Software in Reality</a> or <a
+href="../index.html">Home page</a>] </p>
+
+<p>Last modified <!--webbot bot="Timestamp" startspan
+s-type="EDITED" s-format="%d-%b-%y" -->21-okt-99<!--webbot
+bot="Timestamp" i-checksum="16873" endspan -->.</p>
+</body>
+</html>
